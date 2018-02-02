@@ -7,7 +7,7 @@ Library to Install
  - matplotlib
  - numpy
  - sklearn
-.........................................................................
+ 
 
 #Data set
 Machien Learning Repository Link
