@@ -205,9 +205,7 @@ plt.show()
 #Print final Accuracy
 correct_prediction = tf.equal(tf.argmax(predict,1),tf.argmax(y,1))
 accuracy = tf.reduce_mean(tf.cast(correct_prediction,tf.float32))
-print("Final train accuracy is ",(sess.run(accuracy,feed_dict={x:train_x,y:train_y})))                   #calulate the accuracy with test set
-print("Final test accuracy is ",(sess.run(accuracy,feed_dict={x:test_x,y:test_y})))                   #calulate the accuracy with test set
-
+print("Final accuracy is ",(sess.run(accuracy,feed_dict={x:train_x,y:train_y})))                   #calulate the accuracy with test set
 
 #Print final prediction and Mean Square error of test set
 predict_y = sess.run(predict,feed_dict={x:test_x})
