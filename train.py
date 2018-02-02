@@ -42,7 +42,7 @@ def read_dataset():
     return (x,y)
 
 
-#Read Input/Target fro dataset
+#Read Input/Target from dataset
 X,Y = read_dataset()
 
 #Shuffle dataset
